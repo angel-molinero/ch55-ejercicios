@@ -11,14 +11,13 @@ Escribe un programa que solicite 10 números. Utilizando operadores lógicos y c
 2. determinar y mostrar cual es el mayor de esos numeros
 
 */
+function maxOfNumber() {
+    let numbersArray= [];
 
-let numbers = [];
-for(let i = 1; i <= 10; i++){
-    numbers.push(parseInt(prompt("Ingresa un número: ")))
+    for (let i = 1; i <= 10; i++) {
+        const number = parseInt(prompt(`Ingresa el número #${i}:`));
+        numbersArray.push(number);
+    }
+    console.log(`El número más grande es: ${Math.max(...numbersArray)}`);
 }
-console.log(Math.max(...numbers));
-
-
-
-
-
+maxOfNumber();

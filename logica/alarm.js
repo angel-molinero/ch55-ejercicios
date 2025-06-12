@@ -14,4 +14,14 @@ Ejemplo de resultado: "Hora de dormir después de 10 segundos".
 2.El mensaje con texto mostrando los segundos que han pasado
 */
 
+function alarm() {
+    const segundos = parseInt(prompt("¿En cuantos segundos quiere recibir la alarma? "));
+
+    setTimeout(function () {
+        alert(`Hora de dormir. Han pasado ${segundos} segundos`);
+    }, segundos * 1000);
+}
+
+alarm();
+
 
