@@ -15,7 +15,7 @@ function onlineStatus(users) {
 
     if (count === 0) { // si no hay un elemento en el arreglo (usuario) escribe en consola no one online
         return "no one online";
-    } else if (count === 1) { //si hay un elemento en el arreglo [0] escribe el mensaje del elemento del array y online
+    } else if (count === 1) { //si hay un elemento en el arreglo [0] escribe el mensaje del elemento del array y onlinej
         return `${users[0]} online`;
     } else if (count === 2) {
         return `${users[0]} and ${users[1]} online`;
